@@ -1,7 +1,10 @@
 <!-- _sidebar.md -->
 
-* **入门**
-  * [快速开始](/)
-* **定制化**
-  * [配置项](diy/)
-  * [主题](diy/themes)
+* [**微服务架构**](/)
+* **Docker**
+  * [常用命令](docker/commands)
+  * [MySQL](docker/mysql)
+  * [Nacos](docker/nacos)
+  * [Seata](docker/seata)
+  * [RabbitMQ](docker/rabbitmq)
+  * [Elasticsearch](docker/elasticsearch)
