@@ -1,8 +1,8 @@
-## Seata
+# Seata
 
-### 命令
+## 命令
 
-```
+```bash
 docker run -d \
   --name mysql \
   -p 3306:3306 \

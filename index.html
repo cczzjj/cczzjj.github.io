@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>学习笔记</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="description" content="Description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
@@ -29,17 +29,17 @@
             name: '学习笔记',
             repo: '',
             loadSidebar: true,
-            subMaxLevel: 1,
+            auto2top: true,   // 切换页面自动回到顶部
+            subMaxLevel: 2,   // 目录最大级数
+            maxLevel: 4,      // 可配置最大支持渲染的标题层级
             alias: {
                 '/.*/_sidebar.md': '/_sidebar.md',
-                '/': '/springcloud/techstack.md',
             },
             copyCode: {
                 buttonText: 'Copy',
                 errorText: 'Error',
                 successText: 'OK!',
             },
-            // homepage: 'springcloud/techstatck',
         }
     </script>
     <!-- Docsify v4 -->

@@ -1,5 +1,7 @@
 <!-- _sidebar.md -->
 
+* **快速开始**
+  * [导言](/)
 * **Spring Cloud**
   * [微服务架构](springcloud/techstack)
 * **Spring Boot**
