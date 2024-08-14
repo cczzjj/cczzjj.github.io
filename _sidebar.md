@@ -1,6 +1,8 @@
 <!-- _sidebar.md -->
 
 * [**微服务架构**](/)
+* **Spring Boot**
+  * [安装](springboot/install)
 * **Docker**
   * [常用命令](docker/commands)
   * [MySQL](docker/mysql)
