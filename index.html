@@ -8,35 +8,59 @@
     <meta name="description" content="Description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/docsify/4.13.1/themes/vue.min.css">
+    <style>
+        /* 置顶插件 */
+        .to-top {
+            display: none;
+            padding: 10px 20px;
+            margin-right: 10px;
+            color: #fff;
+            border-radius: 10px;
+            background-color: rgb(66, 185, 131);
+        }
+    </style>
 </head>
 
 <body>
     <div id="app">加载中...</div>
+    <a class="to-top">Top</a>
     <script>
         window.$docsify = {
-            name: '',
+            name: '学习笔记',
             repo: '',
             loadSidebar: true,
             subMaxLevel: 1,
-            loadNavbar: true,
             alias: {
-                '/(docker|springboot)/_sidebar.md': '/_sidebar.md',
-                '/(java)/_sidebar.md': '/java/_sidebar.md',
-                '/(php)/_sidebar.md': '/php/_sidebar.md',
-                '/(python)/_sidebar.md': '/python/_sidebar.md',
-                '/.*/_navbar.md': '/_navbar.md',
+                '/.*/_sidebar.md': '/_sidebar.md',
+                '/': '/springcloud/techstack.md',
             },
             copyCode: {
-                buttonText: '复制',
-                errorText: '复制失败',
-                successText: '复制成功',
+                buttonText: 'Copy',
+                errorText: 'Error',
+                successText: 'OK!',
             },
+            // homepage: 'springcloud/techstatck',
         }
     </script>
     <!-- Docsify v4 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/docsify/4.13.1/docsify.min.js"></script>
+    <!-- docsify表情包 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/docsify/4.13.1/plugins/emoji.min.js"></script>
+    <!-- 复制代码到剪切板 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/docsify-copy-code/3.0.0/docsify-copy-code.min.js"></script>
+
+    <!-- Java、php、python、bash等等语法高亮 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/components/prism-bash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/components/prism-java.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/components/prism-php.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/components/prism-python.min.js"></script>
+
+    <!-- 置顶插件 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="static/js/jquery.toTop.min.js"></script>
+    <script>
+        $('.to-top').toTop();
+    </script>
 </body>
 
 </html>

@@ -1,6 +1,7 @@
 <!-- _sidebar.md -->
 
-* [**微服务架构**](/)
+* **Spring Cloud**
+  * [微服务架构](springcloud/techstack)
 * **Spring Boot**
   * [安装](springboot/install)
 * **Docker**
@@ -10,3 +11,6 @@
   * [Seata](docker/seata)
   * [RabbitMQ](docker/rabbitmq)
   * [Elasticsearch](docker/elasticsearch)
+* **Java**
+* **PHP**
+* **Python**

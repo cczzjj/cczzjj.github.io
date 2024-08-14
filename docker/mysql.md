@@ -2,7 +2,7 @@
 
 ### 命令
 
-```
+```bash
 docker run -d \
   --name mysql \
   -p 3306:3306 \
