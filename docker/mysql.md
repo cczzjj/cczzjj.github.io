@@ -1,7 +1,4 @@
-# MySQL
-
-## 命令
-
+## 安装命令
 ```bash
 docker run -d \
   --name mysql \
