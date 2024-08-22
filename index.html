@@ -33,13 +33,18 @@
             subMaxLevel: 2,   // 目录最大级数
             maxLevel: 4,      // 可配置最大支持渲染的标题层级
             alias: {
-                '/.*/_sidebar.md': '/_sidebar.md',
+                '^(?!\/(java|python|php|golang))/.*/_sidebar.md': '/_sidebar.md',
+                '/java/.*/_sidebar.md': '/java/_sidebar.md',
+                '/python/.*/_sidebar.md': '/python/_sidebar.md',
+                '/php/.*/_sidebar.md': '/php/_sidebar.md',
+                '/golang/.*/_sidebar.md': '/golang/_sidebar.md',
             },
             copyCode: {
                 buttonText: 'Copy',
                 errorText: 'Error',
                 successText: 'OK!',
             },
+            loadNavbar: true,
         }
     </script>
     <!-- Docsify v4 -->
