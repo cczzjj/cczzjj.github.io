@@ -32,19 +32,20 @@
             auto2top: true,   // 切换页面自动回到顶部
             subMaxLevel: 2,   // 目录最大级数
             maxLevel: 4,      // 可配置最大支持渲染的标题层级
+            loadNavbar: true,
             alias: {
                 '^(?!\/(java|python|php|golang))/.*/_sidebar.md': '/_sidebar.md',
                 '/java/.*/_sidebar.md': '/java/_sidebar.md',
                 '/python/.*/_sidebar.md': '/python/_sidebar.md',
                 '/php/.*/_sidebar.md': '/php/_sidebar.md',
                 '/golang/.*/_sidebar.md': '/golang/_sidebar.md',
+                '/.*/_navbar.md': '/_navbar.md',
             },
             copyCode: {
                 buttonText: 'Copy',
                 errorText: 'Error',
                 successText: 'OK!',
             },
-            loadNavbar: true,
         }
     </script>
     <!-- Docsify v4 -->
