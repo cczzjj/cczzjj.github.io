@@ -13,6 +13,7 @@ docker run -d \
   elasticsearch:7.17.23
 ```
 
+
 ## Kibana安装命令
 ```bash
 docker run -d \
@@ -23,14 +24,14 @@ docker run -d \
   kibana:7.17.23
 ```
 
+
 ## IK分词器
 
-> 包含两种analyzer
-> - `ik_smart`：智能语义切分
-> - `ik_max_word`：最细粒度切分
+> **包含两种analyzer**
+- `ik_smart`：智能语义切分
+- `ik_max_word`：最细粒度切分
 
-### 1.在线安装
-
+> **在线安装**
 ```bash
 docker exec -it es \
   ./bin/elasticsearch-plugin install \
@@ -39,7 +40,7 @@ docker exec -it es \
 
 然后重启es容器
 
-### 2.离线安装
+> **离线安装**
 
 查看Elasticsearch容器的plugins数据卷目录：
 ```bash
@@ -63,7 +64,7 @@ docker volume inspect es-plugins
 
 把IK分词器解压后的目录上传到`/var/lib/docker/volumes/es-plugins/_data`，然后重启es容器
 
-### 3.拓展词典
+> **拓展词典**
 
 修改IK分词器config目录中的`IKAnalyzer.cfg.xml`配置文件
 
