@@ -116,6 +116,15 @@ docker inspect [容器名/容器id]
 docker exec -it [容器名/容器id] bash
 ```
 
+> **在容器和宿主机之间复制文件或者目录**
+```bash
+# 从宿主机复制文件到容器
+docker cp SRC_PATH CONTAINER:DEST_PATH
+
+# 从容器复制文件到宿主机
+docker cp CONTAINER:SRC_PATH DEST_PATH
+```
+
 ## 数据卷操作
 
 > **列出所有卷**
