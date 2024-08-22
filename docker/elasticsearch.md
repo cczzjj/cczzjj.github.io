@@ -13,7 +13,6 @@ docker run -d \
   elasticsearch:7.17.23
 ```
 
-
 ## Kibana安装命令
 ```bash
 docker run -d \
@@ -23,7 +22,6 @@ docker run -d \
   -p 5601:5601  \
   kibana:7.17.23
 ```
-
 
 ## IK分词器
 
