@@ -1,8 +1,8 @@
-`Docker Compose`是一个用于定义和运行多个Docker容器的工具。它使用YAML文件来配置应用程序的服务，并允许您通过一个命令来启动、停止和重启应用中的所有服务。
+`Docker Compose`是一个用于定义和运行多个`Docker`容器的工具。它使用`YAML`文件来配置应用程序的服务，并允许您通过一个命令来启动、停止和重启应用中的所有服务。
 
 `Docker Compose`的主要作用是简化容器的管理和部署。它使得多个容器能够以`正确的顺序`和`依赖关系`启动，并确保它们在运行时可以相互通信。这使得开发人员可以更容易地处理复杂的`Docker`环境，尤其是在需要多个容器协同工作的场景下。
 
-## yaml文件基本语法
+## 常用指令
 
 docker-compose文件中可以定义多个相互关联的应用容器，每一个应用容器被称为一个服务（service）。由于service就是在定义某个应用的运行时参数，因此与docker run参数非常相似。
 
@@ -104,17 +104,17 @@ networks:
 
 > **（重新）构建服务**
 ```bash
-docker-compose build [service]
+docker compose build [service]
 ```
 
 > **验证compose文件格式**
 ```bash
-doker-compose config
+doker compose config
 ```
 
 > **构建、（重新）创建、启动并附加到服务的容器**
 ```bash
-docker-compose up
+docker compose up
 ```
 - `-d`：在后台运行服务容器。
 - `--force-recreate`：强制重新创建容器，不能与`--no-recreate`同时使用
@@ -122,30 +122,30 @@ docker-compose up
 
 > **列出所有服务容器**
 ```bash
-docker-compose ps
+docker compose ps
 ```
 
 > **停止并删除服务容器，移除网络**
 ```bash
-docker-compose down
+docker compose down
 ```
 
 > **启动已存在的服务容器**
 ```bash
-docker-compose start [service]
+docker compose start [service]
 ```
 
 > **停止服务容器**
 ```bash
-docker-compose stop [service]
+docker compose stop [service]
 ```
 
 > **重启服务容器**
 ```bash
-docker-compose restart [service]
+docker compose restart [service]
 ```
 
 > **删除已停止的服务容器**
 ```bash
-docker-compose rm [service]
+docker compose rm [service]
 ```
