@@ -1,4 +1,8 @@
-## 常用语法
+`Dockerfile`是一个用来构建镜像的文本文件，文本内容包含了一条条构建镜像所需的指令和说明。
+
+通过定义一系列命令和参数，`Dockerfile`指导`Docker`构建一个自定义的镜像。
+
+## 常用指令
 
 | 指令       | <div style="width:100px;">说明</div>      | 示例                        |
 | ---------- | ---------------------------------------- | --------------------------- |
@@ -29,7 +33,7 @@ RUN cd $JAVA_DIR \
 # 配置环境变量
 ENV JAVA_HOME=$JAVA_DIR/java8
 ENV PATH=$PATH:$JAVA_HOME/bin
-# 指定项目监听的端口
+# 声明项目监听的端口
 EXPOSE 8080
 # 入口，java项目的启动命令
 ENTRYPOINT ["java", "-jar", "/app.jar"]
@@ -67,3 +71,19 @@ docker build -t docker-demo:1.0 .
 # 直接指定Dockerfile目录
 docker build -t docker-demo:1.0 /root/demo
 ```
+
+## 其他指令
+
+> **WORKDIR**
+
+**格式为 WORKDIR <工作目录路径>。**
+
+使用`WORKDIR`指令可以来指定工作目录（或者称为当前目录），以后各层的当前目录就被改为指定的目录，如该目录不存在，`WORKDIR`会帮你建立目录。
+
+> **CMD**
+
+**`CMD`指令的格式和`RUN`相似，也是两种格式：**
+
+- `shell`格式：CMD <命令>
+- `exec`格式：CMD ["可执行文件", "参数1", "参数2"...]
+- 参数列表格式：CMD ["参数1", "参数2"...]。在指定了`ENTRYPOINT`指令后，用`CMD`指定具体的参数。
