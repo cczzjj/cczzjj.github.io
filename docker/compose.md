@@ -16,6 +16,7 @@ docker run -d \
   -v ./mysql/data:/var/lib/mysql \
   -v ./mysql/conf:/etc/mysql/conf.d \
   -v ./mysql/init:/docker-entrypoint-initdb.d \
+  --restart=always
   --network hmall
   mysql
 ```
@@ -36,6 +37,7 @@ services:
       - "./mysql/data:/var/lib/mysql"
       - "./mysql/conf:/etc/mysql/conf.d"
       - "./mysql/init:/docker-entrypoint-initdb.d"
+    restart: always
     networks:
       - hmall
 networks:
