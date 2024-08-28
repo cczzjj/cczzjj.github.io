@@ -107,9 +107,8 @@ networks:
 docker-compose build [service]
 ```
 
-> **config**
+> **验证compose文件格式**
 ```bash
-# 验证compose文件格式是否正确，格式错误会显示错误原因
 doker-compose config
 ```
 
